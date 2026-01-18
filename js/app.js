@@ -16,10 +16,10 @@ const isEven = (num) => num % 2 === 0;
 const isLarge = (num) => num > 10;
 const isShort = (word) => word.length <= 3;
 
-console.log("--- Результати Завдання 1 ---");
-console.log("Парних чисел:", countItems(numbers, isEven));
-console.log("Чисел більше 10:", countItems(numbers, isLarge));
-console.log("Коротких слів:", countItems(words, isShort));
+console.log("Task 1");
+console.log("Even numbers:", countItems(numbers, isEven));
+console.log("Numbers greater than 10:", countItems(numbers, isLarge));
+console.log("Short words:", countItems(words, isShort));
 
 // Task 2
 const calculate = (a, b, operation) => operation(a, b);
@@ -27,9 +27,9 @@ const calculate = (a, b, operation) => operation(a, b);
 const add = (a, b) => a + b;
 const subtract = (a, b) => a - b;
 const multiply = (a, b) => a * b;
-const divide = (a, b) => (b === 0 ? "Помилка: ділення на нуль!" : a / b);
+const divide = (a, b) => (b === 0 ? "Error: division by zero!" : a / b);
 
-console.log("\n--- Результати Завдання 2 ---");
+console.log("Task 2");
 console.log(calculate(10, 5, add));
 console.log(calculate(10, 5, subtract));
 console.log(calculate(10, 5, multiply));
@@ -43,5 +43,5 @@ function repeatMessage(times, messageCreator) {
   }
 }
 
-console.log("\n--- Результати Завдання 3 ---");
-repeatMessage(3, (i) => `Операція №${i + 1} виконана`);
+console.log("Task 3");
+repeatMessage(3, (i) => `Operation #${i + 1} completed`);
